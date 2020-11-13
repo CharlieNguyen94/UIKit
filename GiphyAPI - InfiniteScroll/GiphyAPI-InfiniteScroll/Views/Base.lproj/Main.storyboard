@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qX3-L2-yN9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="l8A-yL-UPc">
+            <objects>
+                <navigationController id="qX3-L2-yN9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v9T-wc-kmI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="P1U-A2-HfJ" kind="relationship" relationship="rootViewController" id="dxd-Yj-GeS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4K-tu-H4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301" y="125"/>
+        </scene>
+        <!--Cool GIFs-->
+        <scene sceneID="ks3-nB-uqL">
+            <objects>
+                <viewController id="P1U-A2-HfJ" customClass="SearchViewController" customModule="GiphyAPI_InfiniteScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3F9-5P-886">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3uz-2X-vLm">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JiA-re-ZYf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mbr-hW-XYU" firstAttribute="bottom" secondItem="3uz-2X-vLm" secondAttribute="bottom" id="DUB-gd-afF"/>
+                            <constraint firstItem="Mbr-hW-XYU" firstAttribute="trailing" secondItem="3uz-2X-vLm" secondAttribute="trailing" id="PP8-nh-Jo6"/>
+                            <constraint firstItem="3uz-2X-vLm" firstAttribute="top" secondItem="Mbr-hW-XYU" secondAttribute="top" id="UkP-w4-biQ"/>
+                            <constraint firstItem="3uz-2X-vLm" firstAttribute="leading" secondItem="Mbr-hW-XYU" secondAttribute="leading" id="gM0-xd-4ki"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mbr-hW-XYU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cool GIFs" id="4RG-Ws-txA"/>
+                    <connections>
+                        <outlet property="resultsCollectionView" destination="3uz-2X-vLm" id="AvJ-TK-fSm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWc-1T-EtF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517" y="125"/>
+        </scene>
+    </scenes>
+</document>
