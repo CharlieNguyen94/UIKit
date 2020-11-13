@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "createdAt": "2019-04-29T03:44:45.496Z",
+        "name": "pixel",
+        "isOccupied": false
+    },
+    {
+        "id": "2",
+        "createdAt": "2019-04-29T16:00:04.266Z",
+        "name": "port",
+        "isOccupied": true
+    },
+    {
+        "id": "3",
+        "createdAt": "2019-04-28T18:54:17.707Z",
+        "name": "application",
+        "isOccupied": true
+    },
+    {
+        "id": "4",
+        "createdAt": "2019-04-28T22:58:18.378Z",
+        "name": "interface",
+        "isOccupied": false
+    },
+    {
+        "id": "5",
+        "createdAt": "2019-04-28T18:18:46.668Z",
+        "name": "transmitter",
+        "isOccupied": true
+    },
+    {
+        "id": "6",
+        "createdAt": "2019-04-29T04:04:43.595Z",
+        "name": "system",
+        "isOccupied": true
+    },
+    {
+        "id": "7",
+        "createdAt": "2019-04-28T22:50:12.911Z",
+        "name": "firewall",
+        "isOccupied": false
+    },
+    {
+        "id": "8",
+        "createdAt": "2019-04-28T23:00:32.717Z",
+        "name": "pixel",
+        "isOccupied": true
+    },
+    {
+        "id": "9",
+        "createdAt": "2019-04-29T07:20:11.840Z",
+        "name": "hard drive",
+        "isOccupied": false
+    },
+    {
+        "id": "10",
+        "createdAt": "2019-04-28T19:05:36.611Z",
+        "name": "card",
+        "isOccupied": false
+    }
+]
